@@ -168,3 +168,14 @@ nav ul li a:hover {
 .phone-char-content {
     flex-grow: 1;
 }
+.support-content {
+    flex-grow: 1;
+}
+
+.account-content {
+    flex-grow: 1;
+}
+
+.cart-content {
+    flex-grow: 1;
+}
