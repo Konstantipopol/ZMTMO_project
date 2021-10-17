@@ -47,6 +47,7 @@ html {
     margin: 50px;
     color: #17252a;
     text-align: center;
+    font-family: Quicksand, serif;
 }
 
 nav {
@@ -167,9 +168,32 @@ nav ul li a:hover {
     flex-grow: 1;
 }
 .support-content {
+    font-family: Quicksand, serif;
+    margin:30px;
     flex-grow: 1;
     display: grid;
-    grid-template-rows: 20% auto 10%;
+    justify-content: center;
+    grid-template-rows: 20% 60% 10%;
+    grid-template-areas:
+        "heading problems another";
+}
+
+.support_heading {
+    grid-area: heading;
+    padding: 30px;
+}
+
+.imaginary_problems{
+    grid-area: problems;
+    line-height: 1.6;
+    padding: 30px;
+    font-size: 20px;
+}
+
+.another_issues {
+    grid-area: another;
+    padding: 30px;
+    font-size: 16px;
 }
 
 .account-content {
