@@ -89,7 +89,7 @@ nav ul li a:hover {
 
 
 .main_footer {
-    width: 100vw;
+    width: 100%;
     display: block;
     padding: 25px 0 60px 10px;
     box-sizing: border-box;
@@ -198,8 +198,34 @@ nav ul li a:hover {
 
 .account-content {
     flex-grow: 1;
+    margin-top: 80px;
 }
-
+.profile-picture{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px;
+}
+.account-personal-info{
+    margin: 80px;
+    line-height: 1.6;
+    padding: 15px;
+    border: 1px solid #17252a;
+    border-radius: 8px;
+    font-family: Quicksand, serif;
+    text-align: center;
+    font-size: 25px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "login mail"
+        "phone birth"
+        "language country";
+}
 .cart-content {
     flex-grow: 1;
 }
