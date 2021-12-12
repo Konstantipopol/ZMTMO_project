@@ -1,3 +1,7 @@
+html {
+    height: 100%;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -8,47 +12,7 @@ body {
     height: 100%;
 }
 
-h4 {
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    font-size: 30px;
-    font-family: "Courier New", serif;
-}
-
-html {
-    height: 100%;
-}
-
-.home-content {
-    margin-top: 80px;
-    flex-grow: 1;
-    display: grid;
-    grid-template-columns: 40% 40%;
-    grid-template-areas:
-        "phone_1 desc_1"
-
-}
-
-.about-us-content {
-    flex-grow: 1;
-}
-
-.phone_1 {
-    margin: 50px;
-    width: 520px;
-    height: 400px;
-    border-radius: 8px;
-}
-
-.desc_1 {
-    font-size: 25px;
-    padding: 40px;
-    margin: 50px;
-    color: #17252a;
-    text-align: center;
-    font-family: Quicksand, serif;
-}
+/* NAVIGATION */
 
 nav {
     position: sticky;
@@ -58,12 +22,6 @@ nav {
     padding: 13px;
     box-sizing: border-box;
     background: #3aa3a9;
-}
-
-.logo {
-    height: 40px;
-    width: 80px;
-    padding-left: 30px;
 }
 
 nav ul {
@@ -87,6 +45,25 @@ nav ul li a:hover {
     color: #17252a;
 }
 
+/* LOGO */
+
+.logo {
+    height: 40px;
+    width: 80px;
+    padding-left: 30px;
+}
+
+
+.footer_logo {
+    margin: 80px 0 20px 50px;
+    height: 100px;
+    width: 200px;
+    float: left;
+    grid-area: logo;
+    text-align: center;
+}
+
+/* FOOTER */
 
 .main_footer {
     width: 100%;
@@ -99,6 +76,7 @@ nav ul li a:hover {
     border-top: 1px solid #17252a;
 }
 
+
 .footer_content {
     display: grid;
     color: #3aa3a9;
@@ -109,19 +87,15 @@ nav ul li a:hover {
         "logo site_map social_media"
 }
 
-.footer_logo {
-    margin: 80px 0 20px 50px;
-    height: 100px;
-    width: 200px;
-    float: left;
-    grid-area: logo;
-    text-align: center;
-}
-
 .footer_hr {
     border: solid 1px #feffff;
     width: 50%;
     float: left;
+}
+
+.footer_link {
+    text-decoration: none;
+    color: #3aa3a9;
 }
 
 .h_site_map {
@@ -143,9 +117,50 @@ nav ul li a:hover {
     grid-area: site_map;
 }
 
-.footer_link {
-    text-decoration: none;
-    color: #3aa3a9;
+/* HEADLINES */
+
+h4 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Courier New", serif;
+}
+
+
+
+/* HOME PAGE */
+
+.home-content {
+    margin-top: 80px;
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-areas:
+        "phone_1 desc_1"
+
+}
+
+.phone_1 {
+    margin: 50px;
+    width: 520px;
+    height: 400px;
+    border-radius: 8px;
+}
+
+.desc_1 {
+    font-size: 25px;
+    padding: 40px;
+    margin: 50px;
+    color: #17252a;
+    text-align: center;
+    font-family: Quicksand, serif;
+}
+
+/* ABOUT US */
+
+.about-us-content {
+    flex-grow: 1;
 }
 
 .about-us-header {
@@ -164,9 +179,54 @@ nav ul li a:hover {
     font-size: 25px;
 }
 
+/* PHONE CHARACTERISTICS */
+
 .phone-char-content {
     flex-grow: 1;
+    margin:50px;
+    line-height: 1.6;
+    text-align: center;
 }
+
+.features {
+    margin: 20px 50px;
+    display:grid;
+    grid-template-columns: 20% 35% 25% 20%;
+    grid-template-areas:
+            "template-1 features-1st-column features-2nd-column template-2";
+}
+
+.phone-char-photo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+.features-1st-column{
+    text-align:left;
+}
+
+.features-2nd-column{
+     text-align:left;
+ }
+
+.features-1st-column .char-h4 {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    font-size: 30px;
+    font-family: "Courier New", serif;
+}
+.features-2nd-column .char-h4 {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    font-size: 30px;
+    font-family: "Courier New", serif;
+}
+/* SUPPORT PAGE */
+
 .support-content {
     font-family: Quicksand, serif;
     margin:30px;
@@ -195,6 +255,8 @@ nav ul li a:hover {
     padding: 30px;
     font-size: 16px;
 }
+
+/* ACCOUNT PAGE */
 
 .account-content {
     flex-grow: 1;
@@ -226,6 +288,9 @@ nav ul li a:hover {
         "phone birth"
         "language country";
 }
+
+/* CART PAGE */
+
 .cart-content {
     font-family: Quicksand, serif;
     margin-top: 80px;
@@ -237,8 +302,8 @@ nav ul li a:hover {
 }
 
 .cart-phone-photo {
-    margin: 50px 0 50px 50px;
-    width: 520px;
+    margin: 50px 0 50px 200px;
+    width: 320px;
     height: 400px;
     border-radius: 8px;
 }
@@ -256,13 +321,57 @@ nav ul li a:hover {
     text-align: center;
 }
 
+/* PHONE PRESENTATION PAGE */
+
+.phone-presentation-content {
+    flex-grow: 1;
+    padding:80px;
+    margin: 20px;
+}
+
+.phone-presentation-content video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+}
+
+.phone-presentation-content audio {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+}
+
+.presentation-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+}
+
+.phone-presentation-content p {
+    margin: 80px;
+    line-height: 1.6;
+    padding: 15px;
+    font-family: Quicksand, serif;
+    text-align: center;
+    font-size: 25px;
+}
+/* BUTTONS */
+
 .button {
     background-color: #17252a;
     border: none;
-    color: #feffff;
     padding: 15px 32px;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    color: #3aa3a9;
+    font-weight: bold;
+}
+
+.button a{
+    text-decoration: none;
+    color: #feffff;
 }
